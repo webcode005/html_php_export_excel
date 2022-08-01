@@ -2,11 +2,11 @@ if(mysql_num_rows($VFODetails) > 0){
     $html5 .="<h5 style='font-size:11pt;' >{$ClientInfo['company_name']} (VFO)</h5>";
     $html5 .='<table border="1" width="600" cellpadding="2" cellspacing="2" style="font-size:11pt;" >';
     $html5 .="<tr>";
-    $html5 .="<th>Date</th>";
-    $html5 .="<th>Time</th>";
-    $html5 .="<th>Call From</th>";
-    $html5 .="<th>Pulse</th>";
-    $html5 .="<th>Rate</th>";
+    $html5 .="<th style='font-size:15pt;background-color:#607d8b;color:#fff;font-weight:bold;'>Date</th>";
+    $html5 .="<th style='font-size:15pt;background-color:#607d8b;color:#fff;font-weight:bold;'>Time</th>";
+    $html5 .="<th style='font-size:15pt;background-color:#607d8b;color:#fff;font-weight:bold;'>Call From</th>";
+    $html5 .="<th style='font-size:15pt;background-color:#607d8b;color:#fff;font-weight:bold;'>Pulse</th>";
+    $html5 .="<th style='font-size:15pt;background-color:#607d8b;color:#fff;font-weight:bold;'>Rate</th>";
     $html5 .="</tr>";
     $VFOTotal = 0;
     while($inb = mysql_fetch_assoc($VFODetails)){
